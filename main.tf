@@ -2,7 +2,7 @@
 # AWS VPC Creation
 #######################################################################################
 
-resource "aws_vpc" "our-vpc" {   # "aws-vpc" is api which helps tocreate AWS VPC and "our-vpc" is code name
+resource "aws_vpc" "our-vpc" {   # "aws-vpc" is api which helps to create AWS VPC and "our-vpc" is code name
   cidr_block = var.vpc_cidr_value   # this is the cidr block which will specify the ip addresses
   tags = {  # it will tag the resource
     Name : "Our-VPC"   # this is the name of the VPC
